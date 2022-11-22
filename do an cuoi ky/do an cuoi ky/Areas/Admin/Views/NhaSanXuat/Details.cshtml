@@ -1,0 +1,113 @@
+﻿
+@model do_an_cuoi_ky.Models.MOHINH
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_MainLayoutAdmin.cshtml";
+}
+
+<h2 style="color:black;text-align:center">CHI TIẾT SẢN PHẨM</h2>
+
+<div style="margin:10px auto;margin-left:30px ">
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @*@Html.DisplayNameFor(model => model.TenMH)*@
+            Tên Mô Hình
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenMH)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.Donvitinh)*@
+            Đơn Vị Tính
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Donvitinh)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.DonGia)*@
+            Đơn Giá
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DonGia)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.MoTa)*@
+            Mô Tả
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MoTa)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.HinhMinhHoa)*@
+            Hình Ảnh
+        </dt>
+
+        <dd>
+            @*@Html.DisplayFor(model => model.HinhMinhHoa)*@
+            <img src="~/Asset/img/@Model.HinhMinhHoa"/>
+        </dd>
+
+
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.NgayCapNhat)*@
+            Ngày Cập Nhật
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayCapNhat)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.SoLuongBan)*@
+            Số Lượng Bán
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoLuongBan)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.SoLuotXem)*@
+            Số Lượt Xem
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoLuotXem)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.CHUDE.TenChuDe)*@
+            Tên Chủ Đề
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CHUDE.TenChuDe)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.NHASANXUAT.TenNSX)*@
+            Nhà Sản Xuất
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NHASANXUAT.TenNSX)
+        </dd>
+
+    </dl>
+</div>
+<p style="margin-left:30px">
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaMH }, new { @class = "btn btn-success" }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

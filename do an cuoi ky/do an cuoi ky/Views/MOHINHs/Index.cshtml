@@ -1,0 +1,69 @@
+﻿@model IEnumerable<do_an_cuoi_ky.Models.MOHINH>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            Tên Mô Hình
+        </th>
+        
+        <th>
+            Giá
+        </th>
+        <th>
+            Mô Tả
+        </th>
+        <th>
+            Hình Minh Họa
+        </th>
+        <th>
+            Ngày Cập Nhật
+        </th>
+        <th>
+            Số Lượng Bán
+        </th>
+        <th>
+            Chủ Đề
+        </th>
+        <th>
+            Nhà Sản Xuất
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenMH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DonGia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MoTa)
+        </td>
+        <td>
+            <img src="~/Asset/img/@item.HinhMinhHoa" style="width:100px;height:100px" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgayCapNhat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SoLuongBan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CHUDE.TenChuDe)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NHASANXUAT.TenNSX)
+        </td>
+    </tr>
+}
+
+</table>

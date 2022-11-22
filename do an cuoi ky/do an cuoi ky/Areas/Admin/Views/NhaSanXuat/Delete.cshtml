@@ -1,0 +1,115 @@
+﻿@model do_an_cuoi_ky.Models.MOHINH
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_MainLayoutAdmin.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>BẠN CÓ CHẮC CHẮN MUỐN XÓA SẢN PHẨM NÀY?</h3>
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            TÊN SẢN PHẨM
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenMH)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.Donvitinh)*@
+            ĐƠN VỊ TÍNH
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Donvitinh)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.DonGia)*@
+            ĐƠN GIÁ
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DonGia)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.MoTa)*@
+            MÔ TẢ
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MoTa)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.HinhMinhHoa)*@
+            HÌNH ẢNH
+        </dt>
+
+        <dd>
+            @*@Html.DisplayFor(model => model.HinhMinhHoa)*@
+            <img src="~/Asset/img/@Model.HinhMinhHoa"/>
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.NgayCapNhat)*@
+            NGÀY CẬP NHẬT
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayCapNhat)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.SoLuongBan)*@
+            SỐ LƯỢNG BÁN
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoLuongBan)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.SoLuotXem)*@
+            SỐ LƯỢT XEM
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoLuotXem)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.CHUDE.TenChuDe)*@
+            TÊN CHỦ ĐỀ
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CHUDE.TenChuDe)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.NHASANXUAT.TenNSX)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NHASANXUAT.TenNSX)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => model.MaMH)
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

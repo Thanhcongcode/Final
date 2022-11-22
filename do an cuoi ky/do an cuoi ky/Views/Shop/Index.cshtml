@@ -1,0 +1,90 @@
+﻿@model IEnumerable<do_an_cuoi_ky.Models.MOHINH>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+
+<body>
+    <!-- End mainmenu area -->
+
+    <div class="product-big-title-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-bit-title text-center">
+                        <h2>SẢN PHẨM</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="display:inline-block;margin-top:40px;text-align:center;margin-left:200px;">
+        @Html.Action("LayChuDe", "Shop")
+    </div>
+    <div class="single-product-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+
+
+            @foreach (var mohinh in Model)
+            {
+        <div class="col-md-3 col-sm-6">
+            <div class="single-shop-product" B style="display:inline-block">
+                <a href="@Url.Action("Details", "Shop", new { id = mohinh.MaMH })"><img src="~/Asset/img/@mohinh.HinhMinhHoa" class="my-img-size" style="width:auto;height:200px" /> </a>
+
+                <h2><a href="@Url.Action("Details", "Shop", new { id = mohinh.MaMH })" style="font-family:inherit; color:aliceblue">@mohinh.TenMH</a></h2>
+                <div class="product-shop-price">@mohinh.DonGia</div>
+            </div>
+        </div>           
+        }
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-pagination text-center">
+                        <nav>
+                            <ul class="pagination">
+                                <li>
+                                    <a href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Latest jQuery form server -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+
+    <!-- Bootstrap JS form CDN -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- jQuery sticky menu -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+
+    <!-- jQuery easing -->
+    <script src="js/jquery.easing.1.3.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+</body>
+

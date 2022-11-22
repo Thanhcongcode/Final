@@ -1,0 +1,527 @@
+﻿
+@{
+    ViewBag.Title = "HDMuahang";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<html lang="vi">
+<head>
+    <meta name="google-site-verification" content="ouxy-Rg86IBA0LsLtKH8_Nky6YSeqxv_wsZTH_6Gud8">
+    <meta http-equiv="content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <title>
+        Hướng dẫn
+
+
+    </title>
+    
+
+
+    <style>
+        :root {
+            --menuWidth: 260px;
+            --leftColBackground: #fff;
+            --lightLeftColBackground: #2d343a; /*+5%*/
+            --darkLeftColBackground: #000; /*-5%*/
+            --mainColor: #f3c844;
+            --accentColor1: #c4c4c4;
+            --accentColor2: #ecbd31; /*Màu giá*/
+            --textColor: #dedede;
+        }
+    </style>
+
+
+
+    <link href="//bizweb.dktcdn.net/100/384/579/themes/839203/assets/noindex.scss.css?1662712787274" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+   
+    <script>
+	const throttle=(c,d)=>{let e;return function(){const f=arguments;const g=this;if(!e){c['apply'](g,f);e=!![];setTimeout(()=>e=![],d);}};};
+	var debouncea=['apply'];(function(c,d){var e=function(f){while(--f){c['push'](c['shift']());}};e(++d);}(debouncea,0xa8));var debounceb=function(c,d){c=c-0x0;var e=debouncea[c];return e;};var debounce=function(c,d){var e;return function(){var f=this,g=arguments;clearTimeout(e);e=setTimeout(function(){return c[debounceb('0x0')](f,g);},d);};};
+	const moneyFormat = '{{amount_no_decimals_with_comma_separator}}₫';
+    </script>
+    <!-- Header hook for plugins ================================================== -->
+    <script>
+	var Bizweb = Bizweb || {};
+	Bizweb.store = 'mdv.mysapo.net';
+	Bizweb.id = 384579;
+	Bizweb.theme = { 'id': 839203, 'name': "Mew Mech", 'role': 'main' };
+	Bizweb.template = 'page';
+	if(!Bizweb.fbEventId)  Bizweb.fbEventId = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+	var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+				return v.toString(16);
+			});
+    </script>
+    <script>
+	(function () {
+		function asyncLoad() {
+			var urls = ["https://google-shopping.sapoapps.vn/conversion-tracker/global-tag/6098.js?store=mdv.mysapo.net","https://google-shopping.sapoapps.vn/conversion-tracker/event-tag/6098.js?store=mdv.mysapo.net","https://statistic-blog-v2.sapoapps.vn/api/script-tag.js?store=mdv.mysapo.net","https://google-shopping-v2.sapoapps.vn/api/conversion-tracker/global-tag/1811?store=mdv.mysapo.net","https://google-shopping-v2.sapoapps.vn/api/conversion-tracker/event-tag/1811?store=mdv.mysapo.net","https://google-shopping-v2.sapoapps.vn/api/conversion-tracker/event-tag-conversion/1811?store=mdv.mysapo.net"];
+			for (var i = 0; i < urls.length; i++) {
+				var s = document.createElement('script');
+				s.type = 'text/javascript';
+				s.async = true;
+				s.src = urls[i];
+				var x = document.getElementsByTagName('script')[0];
+				x.parentNode.insertBefore(s, x);
+			}
+		};
+		window.attachEvent ? window.attachEvent('onload', asyncLoad) : window.addEventListener('load', asyncLoad, false);
+	})();
+    </script>
+
+
+    <script>
+	window.BizwebAnalytics = window.BizwebAnalytics || {};
+	window.BizwebAnalytics.meta = window.BizwebAnalytics.meta || {};
+	window.BizwebAnalytics.meta.currency = 'VND';
+	window.BizwebAnalytics.tracking_url = '/s';
+
+	var meta = {};
+
+
+	for (var attr in meta) {
+	window.BizwebAnalytics.meta[attr] = meta[attr];
+	}
+    </script>
+
+
+    <script src="/dist/js/stats.min.js?v=69e02f0"></script>
+    <script async="" src="//bizweb.dktcdn.net/web/assets/lib/js/fp.v3.3.0.min.js"></script>
+
+
+
+
+
+
+
+
+
+    <!-- Google One Tap -->
+    <script type="text/javascript">
+	(function () {
+		var iframe;
+		if(window.innerWidth <= 800){
+			setTimeout(init, 10000);
+		} else {
+			document.addEventListener('DOMContentLoaded', init);
+		}
+		function init() {
+			if (document.cookie.indexOf('one-click-social-login-google-one-tap-shown') >= 0) {
+                return;
+            }
+			iframe = document.createElement('iframe');
+			iframe.id = "iframe-google-one-tap";
+			iframe.src = 'https://store.mysapo.net/account/GoogleOneTap';
+			iframe.setAttribute('allowtransparency', 'true');
+			iframe.frameBorder = 0;
+			iframe.height = '385px';
+			window.addEventListener('message', handlePostMessage, false);
+			document.body.appendChild(iframe);
+		}
+		function handlePostMessage(e) {
+			var eventName = e.data[0];
+			var data = e.data[1];
+			switch (eventName) {
+				case 'setHeight':
+					iframe.height = data;
+					break;
+				case 'setTop':
+					if ((window.innerWidth <= 800)) {
+						iframe.style = "z-index: 9999999; position: fixed; bottom: 0px; right: 0px;";
+						iframe.width = '100%';
+					}
+					else {
+						iframe.style = "z-index: 9999999; position: fixed; top: 0px; right: 0px;";
+						iframe.width = '391px';
+					}
+					break;
+				case 'setRedirect':
+					location.href = data.url + '&ReturnUrl=' + location.href;
+					break;
+				case 'markClosedOneTap':
+					var date = new Date();
+					date.setTime(date.getTime() + (1*24*60*60*1000));
+					document.cookie = "one-click-social-login-google-one-tap-shown=1; expires=" + date.toUTCString() + "; path=/";
+					break;
+			}
+		}
+	}())
+    </script>
+    <!-- End Google One Tap -->
+
+
+
+
+
+
+
+
+
+
+    
+    <link href="//bizweb.dktcdn.net/100/384/579/themes/839203/assets/cf-stylesheet.css?1662712787274" rel="stylesheet" type="text/css">
+    <link href="//bizweb.dktcdn.net/100/384/579/themes/839203/assets/appbulk-product-statistics.css?1662712787274" rel="stylesheet" type="text/css">
+    <meta http-equiv="origin-trial" content="A751Xsk4ZW3DVQ8WZng2Dk5s3YzAyqncTzgv+VaE6wavgTY0QHkDvUTET1o7HanhuJO8lgv1Vvc88Ij78W1FIAAAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
+    <meta http-equiv="origin-trial" content="A751Xsk4ZW3DVQ8WZng2Dk5s3YzAyqncTzgv+VaE6wavgTY0QHkDvUTET1o7HanhuJO8lgv1Vvc88Ij78W1FIAAAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
+    <script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/382356609/?random=1667735563645&amp;cv=11&amp;fst=1667735563645&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=2oab20&amp;u_w=1536&amp;u_h=864&amp;hn=www.googleadservices.com&amp;frm=0&amp;url=https%3A%2F%2Fmomotarou.vn%2Fhuong-dan&amp;ref=https%3A%2F%2Fmomotarou.vn%2Fgioi-thieu&amp;tiba=H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn&amp;auid=142516534.1666687934&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script>
+</head>
+<body>
+    
+            
+    <div class="col-right">
+        <div class="contentWarp">
+            
+            <div class="com_info">
+                <div class="container" style="margin-top:40px; background-color:black">
+                    <div class="art_container mt-4 mb-4 rounded">
+                        <div class="rte m-auto d-block min-height-content content pt-4 pb-4">
+                            <h1 class="font-weight-bold text-center  mb-4" style="color:aliceblue">
+                                Hướng dẫn
+                            </h1>
+                            <div style="color:wheat">
+                                <p style="text-align: justify; color: white;font-size:20px"><strong>Bước 1:</strong> Truy cập website và lựa chọn sản phẩm cần mua để mua hàng</p>
+
+                                <p style="text-align: justify; color: white; font-size: 20px"><strong>Bước 2:</strong> Click và sản phẩm muốn mua, màn hình hiển thị ra pop up với các lựa chọn sau</p>
+
+                                <p style="text-align: justify; color: white; font-size: 20px">Nếu bạn muốn tiếp tục mua hàng: Bấm vào phần tiếp tục mua hàng để lựa chọn thêm sản phẩm vào giỏ hàng</p>
+
+                                <p style="text-align: justify; color: white; font-size: 20px">Nếu bạn muốn xem giỏ hàng để cập nhật sản phẩm: Bấm vào xem giỏ hàng</p>
+
+                                <p style="text-align: justify; color: white; font-size: 20px">Nếu bạn muốn đặt hàng và thanh toán cho sản phẩm này vui lòng bấm vào: Đặt hàng và thanh toán</p>
+
+                                <p style="text-align: justify; color: white; font-size: 20px"><strong>Bước 3:</strong> Lựa chọn thông tin tài khoản thanh toán</p>
+
+                                <p style="text-align: justify; color: white; font-size: 20px">Nếu bạn đã có tài khoản vui lòng nhập thông tin tên đăng nhập là email và mật khẩu vào mục đã có tài khoản trên hệ thống</p>
+
+                                <p style="text-align: justify; color: white; font-size: 20px">Nếu bạn chưa có tài khoản và muốn đăng ký tài khoản vui lòng điền các thông tin cá nhân để tiếp tục đăng ký tài khoản. Khi có tài khoản bạn sẽ dễ dàng theo dõi được đơn hàng của mình</p>
+
+                                <p style="text-align: justify; color: white; font-size: 20px">Nếu bạn muốn mua hàng mà không cần tài khoản vui lòng nhấp chuột vào mục đặt hàng không cần tài khoản</p>
+
+                                <p style="text-align: justify; color: white; font-size: 20px"><strong>Bước 4:</strong> Điền các thông tin của bạn để nhận đơn hàng, lựa chọn hình thức thanh toán và vận chuyển cho đơn hàng của mình</p>
+
+                                <p style="text-align: justify; color: white; font-size: 20px"><strong>Bước 5:</strong> Xem lại thông tin đặt hàng, điền chú thích và gửi đơn hàng</p>
+
+                                <p style="text-align: justify; color: white; font-size: 20px">Sau khi nhận được đơn hàng bạn gửi chúng tôi sẽ liên hệ bằng cách gọi điện lại để xác nhận lại đơn hàng và địa chỉ của bạn.</p>
+
+                                <p style="text-align: justify; color: white; font-size: 20px">Trân trọng cảm ơn.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div onclick="scrollToTop(1000);" class="back_top d-flex position-fixed justify-content-center align-items-center">
+            <img alt="Lên đầu trang" src="//bizweb.dktcdn.net/100/384/579/themes/839203/assets/to-top-arrow2.png?1662712787274">
+        </div>
+
+
+        <script src="//bizweb.dktcdn.net/100/384/579/themes/839203/assets/mew_slide.js?1662712787274" type="text/javascript"></script>
+        <script>
+            const mewsluga = ['toString', 'join', 'aaaaaaaaacccddeeeeeeegghiiiiilmnnnnooooooprrsssssttuuuuuuuuuwxyyzzz------', 'toLowerCase', '9489dzbZGd', 'prototype', '1221697aJNrbc', '141055iCbhLH', '-and-', '1541440lZmsJl', 'indexOf', '39FoFDgg', '32950QJzfDs', '1645975ydwcGt', 'charAt', 'slugify', 'replace', 'àáäâãåăæąçćčđďèéěėëêęğǵḧìíïîįłḿǹńňñòóöôœøṕŕřßşśšșťțùúüûǘůűūųẃẍÿýźžż·/_,:;', 'split', '2427931xNilsF']; const mewslugh = mewslugb; function mewslugb(a, b) { a = a - 0xca; let c = mewsluga[a]; return c; } (function (a, b) { const g = mewslugb; while (!![]) { try { const c = parseInt(g(0xd4)) + -parseInt(g(0xdb)) + -parseInt(g(0xd7)) + -parseInt(g(0xda)) + parseInt(g(0xd5)) + parseInt(g(0xd2)) * parseInt(g(0xd9)) + parseInt(g(0xcd)); if (c === b) break; else a['push'](a['shift']()); } catch (d) { a['push'](a['shift']()); } } }(mewsluga, 0xe5965), String[mewslugh(0xd3)][mewslugh(0xdd)] = function () { const i = mewslugh, c = i(0xcb), d = i(0xd0), e = new RegExp(c[i(0xcc)]('')[i(0xcf)]('|'), 'g'); return this[i(0xce)]()[i(0xd1)]()[i(0xca)](/á|à|ả|ạ|ã|ă|ắ|ằ|ẳ|ẵ|ặ|â|ấ|ầ|ẩ|ẫ|ậ/gi, 'a')[i(0xca)](/é|è|ẻ|ẽ|ẹ|ê|ế|ề|ể|ễ|ệ/gi, 'e')[i(0xca)](/i|í|ì|ỉ|ĩ|ị/gi, 'i')[i(0xca)](/ó|ò|ỏ|õ|ọ|ô|ố|ồ|ổ|ỗ|ộ|ơ|ớ|ờ|ở|ỡ|ợ/gi, 'o')[i(0xca)](/ú|ù|ủ|ũ|ụ|ư|ứ|ừ|ử|ữ|ự/gi, 'u')[i(0xca)](/ý|ỳ|ỷ|ỹ|ỵ/gi, 'y')[i(0xca)](/đ/gi, 'd')[i(0xca)](/\s+/g, '-')[i(0xca)](e, f => d[i(0xdc)](c[i(0xd8)](f)))[i(0xca)](/&/g, i(0xd6))[i(0xca)](/[^\w\-]+/g, '')[i(0xca)](/\-\-+/g, '-')[i(0xca)](/^-+/, '')[i(0xca)](/-+$/, ''); });
+            const mew_0x2e34 = ['item_count', '78035HzUskU', '347852jcJhIT', 'json', 'innerHTML', '146304MMsHpg', '119029WxzBHN', 'add', '.btn-cart-indicator', 'then', '1497043TnvlJL', '1xbmWfl', '435764etKfxY', 'querySelectorAll', '4Kwtufd', '/cart.js', '3MqyUaB', 'remove', 'd-none', '270420HgYpgq', 'length', 'forEach', 'classList']; const mew_0x3b20 = function (_0x1966ea, _0x47ceee) { _0x1966ea = _0x1966ea - 0x9b; let _0x2e34d8 = mew_0x2e34[_0x1966ea]; return _0x2e34d8; }; (function (_0x42175, _0x11feed) { const _0x262a4f = mew_0x3b20; while (!![]) { try { const _0x2e1d07 = parseInt(_0x262a4f(0xad)) + parseInt(_0x262a4f(0x9d)) + parseInt(_0x262a4f(0xa4)) + parseInt(_0x262a4f(0xaa)) + parseInt(_0x262a4f(0xa9)) * parseInt(_0x262a4f(0x9f)) + parseInt(_0x262a4f(0xae)) * parseInt(_0x262a4f(0xa1)) + -parseInt(_0x262a4f(0x9b)) * parseInt(_0x262a4f(0x9c)); if (_0x2e1d07 === _0x11feed) break; else _0x42175['push'](_0x42175['shift']()); } catch (_0x51e8cb) { _0x42175['push'](_0x42175['shift']()); } } }(mew_0x2e34, 0x5af2c)); function cartStatus() { const _0x2c2aeb = mew_0x3b20; let _0x88d3a8 = document[_0x2c2aeb(0x9e)](_0x2c2aeb(0xb0)); fetch(_0x2c2aeb(0xa0))[_0x2c2aeb(0xb1)](_0x1190c8 => _0x1190c8[_0x2c2aeb(0xab)]())[_0x2c2aeb(0xb1)](_0x2192ad => { const _0x6ff41b = _0x2c2aeb; if (!_0x88d3a8[_0x6ff41b(0xa5)]) return; _0x2192ad[_0x6ff41b(0xa8)] > 0x0 ? _0x88d3a8['forEach'](_0x298572 => { const _0x31dd2f = _0x6ff41b; _0x298572['classList'][_0x31dd2f(0xa2)](_0x31dd2f(0xa3)), _0x298572[_0x31dd2f(0xac)] = _0x2192ad[_0x31dd2f(0xa8)]; }) : _0x88d3a8[_0x6ff41b(0xa6)](_0x320e68 => { const _0x4ca21a = _0x6ff41b; _0x320e68[_0x4ca21a(0xa7)][_0x4ca21a(0xaf)](_0x4ca21a(0xa3)), _0x320e68[_0x4ca21a(0xac)] = ''; }); }); }
+            var _0x4811 = ['GET', 'statusText', 'onreadystatechange', 'send', 'setRequestHeader', 'Content-Type', 'application/x-www-form-urlencoded;\x20charset=UTF-8', 'readyState', 'status', 'from', 'toString', 'open']; (function (_0xeaf378, _0xcbc1f8) { var _0x48110c = function (_0x1162d9) { while (--_0x1162d9) { _0xeaf378['push'](_0xeaf378['shift']()); } }; _0x48110c(++_0xcbc1f8); }(_0x4811, 0x1e4)); var _0x1162 = function (_0xeaf378, _0xcbc1f8) { _0xeaf378 = _0xeaf378 - 0x65; var _0x48110c = _0x4811[_0xeaf378]; return _0x48110c; }; var sheetRequest = function (_0xd22a98, _0x58f285, _0x847e96) { var _0x393b3d = _0x1162, _0x463a38 = new XMLHttpRequest(), _0x4fec58 = new URLSearchParams(Array[_0x393b3d(0x6a)](new FormData(_0xd22a98)))[_0x393b3d(0x6b)](), _0x1f84ce = _0x58f285 + '?' + _0x4fec58; return new Promise(function (_0x4d1c2f, _0x22c35a) { var _0x3908cb = _0x393b3d; _0x463a38[_0x3908cb(0x6f)] = function () { var _0x4c4a51 = _0x3908cb; if (_0x463a38[_0x4c4a51(0x68)] !== 0x4) return; _0x463a38[_0x4c4a51(0x69)] >= 0xc8 && _0x463a38[_0x4c4a51(0x69)] < 0x12c ? _0x4d1c2f(_0x463a38) : _0x22c35a({ 'status': _0x463a38[_0x4c4a51(0x69)], 'statusText': _0x463a38[_0x4c4a51(0x6e)] }); }, _0x463a38[_0x3908cb(0x6c)](_0x847e96 || _0x3908cb(0x6d), _0x1f84ce, !![]), _0x463a38[_0x3908cb(0x65)](_0x3908cb(0x66), _0x3908cb(0x67)), _0x463a38[_0x3908cb(0x70)](); }); };
+            const mew_0x23a6 = ['263885ioXfmP', '135229LlzHcr', '1smNQtD', 'floor', '2543weOLLZ', 'parse', '90542EGNgTy', '242863RRARzQ', '139kwVUFs', '13705wQsGxu', '5195QWgVcV']; const mew_0x33c7 = function (_0x2b0a67, _0x2bc5e8) { _0x2b0a67 = _0x2b0a67 - 0x10e; let _0x23a6d7 = mew_0x23a6[_0x2b0a67]; return _0x23a6d7; }; (function (_0x3b98da, _0x5949ef) { const _0x3e3272 = mew_0x33c7; while (!![]) { try { const _0x48ad9b = parseInt(_0x3e3272(0x114)) * -parseInt(_0x3e3272(0x118)) + parseInt(_0x3e3272(0x111)) + -parseInt(_0x3e3272(0x116)) + parseInt(_0x3e3272(0x117)) + parseInt(_0x3e3272(0x10f)) + -parseInt(_0x3e3272(0x110)) * -parseInt(_0x3e3272(0x112)) + -parseInt(_0x3e3272(0x10e)); if (_0x48ad9b === _0x5949ef) break; else _0x3b98da['push'](_0x3b98da['shift']()); } catch (_0x36de5f) { _0x3b98da['push'](_0x3b98da['shift']()); } } }(mew_0x23a6, 0x2e408)); function padZero(_0x723f40) { const _0x161ac5 = mew_0x33c7; return ('0' + Math[_0x161ac5(0x113)](_0x723f40))['slice'](-0x2); } function getTimeRemaining(_0x27c575) { const _0x4d2928 = mew_0x33c7, _0x5bbb92 = _0x27c575 - Date[_0x4d2928(0x115)](new Date()), _0x1fabe4 = padZero(_0x5bbb92 / 0x3e8 % 0x3c), _0x4d4a0d = padZero(_0x5bbb92 / 0x3e8 / 0x3c % 0x3c), _0x109c25 = padZero(_0x5bbb92 / 0x36ee80 % 0x18); return { 'total': _0x5bbb92, 'days': padZero(_0x5bbb92 / 0x5265c00), 'hours': _0x109c25, 'minutes': _0x4d4a0d, 'seconds': _0x1fabe4 }; }
+            const mew_0x10a1 = ['884387rENsZC', '196912pMWDgM', '29383ZkEJGT', '7wqHDRJ', 'variantId', 'alias', '1mKuegj', 'quantity', '870437YCIFeW', '11LiIgCS', '1006003zNLsJp', '611153tSPkvJ', 'productAlias', 'value', 'name', '118596lIZbDU', 'serializeArray']; const mew_0x5570 = function (_0x229629, _0x454baf) { _0x229629 = _0x229629 - 0x11e; let _0x10a167 = mew_0x10a1[_0x229629]; return _0x10a167; }; (function (_0x3a795c, _0x24348b) { const _0x4e4b26 = mew_0x5570; while (!![]) { try { const _0x43df21 = -parseInt(_0x4e4b26(0x123)) + -parseInt(_0x4e4b26(0x11e)) + -parseInt(_0x4e4b26(0x12d)) + parseInt(_0x4e4b26(0x11f)) + -parseInt(_0x4e4b26(0x125)) * -parseInt(_0x4e4b26(0x12b)) + parseInt(_0x4e4b26(0x12e)) * -parseInt(_0x4e4b26(0x127)) + -parseInt(_0x4e4b26(0x128)) * -parseInt(_0x4e4b26(0x126)); if (_0x43df21 === _0x24348b) break; else _0x3a795c['push'](_0x3a795c['shift']()); } catch (_0x149098) { _0x3a795c['push'](_0x3a795c['shift']()); } } }(mew_0x10a1, 0x87a9b)); function getObjectData(_0x346991) { const _0x502982 = mew_0x5570, _0x33af72 = { 'variantId': '', 'quantity': 0x0, 'alias': '' }; return _0x346991[_0x502982(0x124)]()['forEach'](_0x2198d7 => { const _0x181c59 = _0x502982; switch (_0x2198d7[_0x181c59(0x122)]) { case _0x181c59(0x12c): _0x33af72[_0x181c59(0x12c)] = _0x2198d7['value']; break; case _0x181c59(0x129): _0x33af72['variantId'] = _0x2198d7[_0x181c59(0x121)]; break; case _0x181c59(0x120): _0x33af72[_0x181c59(0x12a)] = _0x2198d7[_0x181c59(0x121)]; } }), _0x33af72; }
+            var mewfilterColora = ['prototype', 'contains', '5UMHPud', '36956xSowoC', 'filterColor', '2UMVxPe', '3473491exvECe', '1037160AqTlNe', '577077jWCSJb', 'length', '242223TFySSN', '1JLhABD', '1HyrhBf', '857253Pmyvdg', 'classList', '3jCptsq', '982759awzBqB', 'push']; var mewfilterColorf = mewfilterColorb; function mewfilterColorb(a, b) { a = a - 0x1bb; var c = mewfilterColora[a]; return c; } (function (a, b) { var e = mewfilterColorb; while (!![]) { try { var c = parseInt(e(0x1c0)) * -parseInt(e(0x1c3)) + parseInt(e(0x1c8)) * -parseInt(e(0x1c6)) + parseInt(e(0x1bd)) * -parseInt(e(0x1be)) + parseInt(e(0x1c2)) + -parseInt(e(0x1ca)) * parseInt(e(0x1c5)) + parseInt(e(0x1c7)) * -parseInt(e(0x1cb)) + parseInt(e(0x1c1)); if (c === b) break; else a['push'](a['shift']()); } catch (d) { a['push'](a['shift']()); } } }(mewfilterColora, 0x93b6c), Array[mewfilterColorf(0x1bb)][mewfilterColorf(0x1bf)] = function (a) { var g = mewfilterColorf, b = []; for (let c = 0x0; c < this[g(0x1c4)]; c++) { if (this[c][g(0x1c9)][g(0x1bc)](a)) b[g(0x1cc)](this[c]); } return b; });
+        </script><link rel="preload" as="script" href="//bizweb.dktcdn.net/100/384/579/themes/839203/assets/mew_global.js?1662712787274">
+        <script src="//bizweb.dktcdn.net/100/384/579/themes/839203/assets/mew_global.js?1662712787274" type="text/javascript"></script>
+
+        <link rel="preload" as="script" href="//bizweb.dktcdn.net/100/384/579/themes/839203/assets/toast.js?1662712787274">
+        <script src="//bizweb.dktcdn.net/100/384/579/themes/839203/assets/toast.js?1662712787274" type="text/javascript"></script>
+        <link rel="preload" as="script" href="//bizweb.dktcdn.net/assets/themes_support/api.jquery.js">
+        <script src="//bizweb.dktcdn.net/assets/themes_support/api.jquery.js" type="text/javascript"></script>
+        <script>
+            const toastrConfig = { "closeButton": true, "debug": false, "newestOnTop": false, "progressBar": false, "positionClass": "toast-top-right", "preventDuplicates": false, "onclick": null, "showDuration": "300", "hideDuration": "1000", "timeOut": "5000", "extendedTimeOut": "1000", "showEasing": "swing", "hideEasing": "linear", "showMethod": "fadeIn", "hideMethod": "fadeOut" };
+            toastr.options = toastrConfig;
+            var GLOBAL = {
+                common: {
+                    init: function () {
+                        $('.js-addToCart').on('click', throttle(addToCart, 200));
+                        //$('.js-addToCart').bind('click', addToCart );
+                    }
+                },
+                templateIndex: { init: function () { } },
+                templateProduct: { init: function () { } },
+                templateCart: { init: function () { } }
+            }
+            var UTIL = {
+                fire: function (func, funcname, args) {
+                    var namespace = GLOBAL;
+                    funcname = (funcname === undefined) ? 'init' : funcname;
+                    if (func !== '' && namespace[func] && typeof namespace[func][funcname] == 'function') {
+                        namespace[func][funcname](args);
+                    }
+                },
+                loadEvents: function () {
+                    var bodyId = document.body.id;
+
+                    UTIL.fire("common");
+
+                    $.each(document.body.className.split(/\s+/), function (i, classnm) {
+                        UTIL.fire(classnm);
+                        UTIL.fire(classnm, bodyId);
+                    });
+                }
+
+            };
+            $(document).ready(UTIL.loadEvents);
+            /**
+         * Ajaxy add-to-cart
+         */
+            Number.prototype.formatMoney = function (c, d, t) {
+                var n = this,
+                    c = isNaN(c = Math.abs(c)) ? 2 : c,
+                    d = d == undefined ? '.' : d,
+                    t = t == undefined ? '.' : t,
+                    s = n < 0 ? '-' : '',
+                    i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + '',
+                    j = (j = i.length) > 3 ? j % 3 : 0;
+                return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, '$1' + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : '');
+            };
+
+
+            $('.js-addToCart').on('click', function (e) {
+                e.preventDefault();
+            });
+            async function addToCart(e) {
+                //e.preventDefault();
+                if (typeof e !== "undefined") e.preventDefault();
+                var $this = $(this),
+                    form = $this.parents('form');
+
+                let formData = getObjectData(form);
+                console.log('Product obj', formData);
+                var tempQuantity = await checkMaxQuantityAvaiable(formData.quantity, formData.variantId, formData.alias);
+                if (tempQuantity < 0) {
+                    console.log(formData.quantity);
+                    toastr['warning'](`Bạn vui lòng xóa sản phẩm thêm lại giỏ`, 'Quản trị thay đổi tồn kho');
+                    return false;
+                } else if (tempQuantity == 0) {
+                    toastr['error'](`Số lượng trong kho không đủ`, 'Không thể mua thêm');
+                    return false;
+                } else if (tempQuantity < formData.quantity) {
+                    toastr['error'](`Số lượng trong kho, chỉ có thể mua ${tempQuantity} sản phẩm`, 'Tồn kho không đủ');
+                }
+                let data = $('#add-to-cart-form').serialize().replace(`quantity=${formData.quantity}`, `quantity=${tempQuantity}`);
+                $.ajax({
+                    type: 'POST',
+                    url: '/cart/add.js',
+                    async: false,
+                    data: data,
+                    dataType: "json",
+                    error: addToCartFail,
+                    success: addToCartSuccess,
+                    cache: false
+                });
+            }
+
+            function addToCartSuccess(jqXHR, textStatus, errorThrown) {
+                $.ajax({
+                    type: 'GET',
+                    url: '/cart.js',
+                    async: false,
+                    cache: false,
+                    dataType: 'json',
+                    success: function (cart) {
+                        cartStatus();
+
+                        toastr['success'](`Sản phẩm ${jqXHR['name']} đã được thêm vào giỏ. <a href="/cart" title="Giỏ hàng" class="d-block">[Tới giỏ hàng]</a>`, 'Thành công');
+                    }
+                });
+            }
+            function addToCartFail(jqXHR, textStatus, errorThrown) {
+                var response = $.parseJSON(jqXHR.responseText);
+                toastr['error'](`response.description`, 'Có lỗi xảy ra');
+            }
+            $(document).on('click', '.remove-item-cart', function () {
+                var variantId = $(this).attr('data-id');
+                removeItemCart(variantId);
+            });
+
+            $('.cart__basket').on('click', '.js-step-qty', function () {
+                var inputQty = $(this).parent().find('.quantity'),
+                    variantId = inputQty.attr('data-variantid'),
+                    qty = inputQty.val();
+                updateQuantity(qty, variantId);
+            });
+
+            const mew_0x5044 = ['/cart.js', 'variant_id', '50380JqlKAD', '4dFqSWh', 'items', 'inventory_management', '1538487PDekUE', 'variants', '1QXPDDz', '394835ALnHNi', '.json', 'quantity', 'forEach', 'no-store', '441361qVoNPs', 'then', 'deny', 'item_count', 'url', '1441661ENYkzA', 'json', '1445180uLZMpo', '1879063OuDtVE', 'inventory_policy', 'bizweb', 'inventory_quantity']; const mew_0x2b92 = function (_0x1d6795, _0x1b3a6f) { _0x1d6795 = _0x1d6795 - 0x168; let _0x504474 = mew_0x5044[_0x1d6795]; return _0x504474; }; (function (_0x1617dd, _0x4dcdaa) { const _0x24a48a = mew_0x2b92; while (!![]) { try { const _0x4254ad = parseInt(_0x24a48a(0x16e)) * parseInt(_0x24a48a(0x179)) + -parseInt(_0x24a48a(0x17c)) + -parseInt(_0x24a48a(0x17b)) + -parseInt(_0x24a48a(0x16f)) + -parseInt(_0x24a48a(0x168)) + -parseInt(_0x24a48a(0x174)) * -parseInt(_0x24a48a(0x169)) + parseInt(_0x24a48a(0x16c)); if (_0x4254ad === _0x4dcdaa) break; else _0x1617dd['push'](_0x1617dd['shift']()); } catch (_0x46df66) { _0x1617dd['push'](_0x1617dd['shift']()); } } }(mew_0x5044, 0xee506)); function checkMaxQuantityAvaiable(_0x3629bb, _0x5cc652, _0x350a6f) { let _0x13a530 = parseInt(_0x3629bb); return new Promise(_0x1d1fad => { const _0x582456 = mew_0x2b92; fetch(_0x582456(0x180), { 'cache': _0x582456(0x173) })[_0x582456(0x175)](_0x2331a3 => _0x2331a3['json']())[_0x582456(0x175)](_0x3d56c9 => { const _0xd8769a = _0x582456; if (0x0 == _0x3d56c9[_0xd8769a(0x177)]) fetch(_0x350a6f + '.json')[_0xd8769a(0x175)](_0x5aa7fd => _0x5aa7fd[_0xd8769a(0x17a)]())[_0xd8769a(0x175)](_0x226b9e => { const _0x310d6c = _0xd8769a; _0x226b9e[_0x310d6c(0x16d)][_0x310d6c(0x172)](_0x6294e6 => { const _0x5b79e2 = _0x310d6c; if (_0x6294e6['id'] == _0x5cc652) { if (_0x5b79e2(0x17e) == _0x6294e6['inventory_management'] && _0x5b79e2(0x176) == _0x6294e6[_0x5b79e2(0x17d)]) { let _0x424a3d = parseInt(_0x6294e6['inventory_quantity']); _0x13a530 >= _0x424a3d && _0x1d1fad(_0x424a3d), _0x1d1fad(_0x13a530); } _0x1d1fad(_0x13a530); } }); }); else { if (void 0x0 !== _0x350a6f) { let _0x216257 = !0x1; if (_0x3d56c9[_0xd8769a(0x16a)][_0xd8769a(0x172)](_0x32e70e => { const _0x2c6774 = _0xd8769a; _0x32e70e[_0x2c6774(0x181)] == _0x5cc652 && (_0x216257 = !0x0); }), _0x216257) { let _0x47baa8 = 0x0; _0x3d56c9[_0xd8769a(0x16a)][_0xd8769a(0x172)](_0x21a69f => { const _0x315d5b = _0xd8769a; _0x21a69f[_0x315d5b(0x181)] == _0x5cc652 && (_0x47baa8 = _0x21a69f[_0x315d5b(0x171)]); }), fetch(_0x350a6f + _0xd8769a(0x170), { 'cache': _0xd8769a(0x173) })['then'](_0x35493e => _0x35493e['json']())[_0xd8769a(0x175)](_0x747ea3 => { const _0x58ce0f = _0xd8769a; _0x747ea3[_0x58ce0f(0x16d)][_0x58ce0f(0x172)](_0x1e00f9 => { const _0x3d5c01 = _0x58ce0f; if (_0x1e00f9['id'] == _0x5cc652) { if (_0x3d5c01(0x17e) == _0x1e00f9[_0x3d5c01(0x16b)] && _0x3d5c01(0x176) == _0x1e00f9[_0x3d5c01(0x17d)]) { let _0x4ec2a9 = parseInt(_0x1e00f9[_0x3d5c01(0x17f)]); parseInt(_0x47baa8) == _0x4ec2a9 ? _0x1d1fad(0x0) : _0x13a530 + parseInt(_0x47baa8) > _0x4ec2a9 ? _0x1d1fad(_0x4ec2a9 - parseInt(_0x47baa8) >= _0x13a530 ? _0x13a530 : _0x4ec2a9 - parseInt(_0x47baa8)) : _0x1d1fad(_0x13a530); } _0x1d1fad(_0x13a530); } }); }); } else fetch(_0x350a6f + '.json', { 'cache': _0xd8769a(0x173) })[_0xd8769a(0x175)](_0x6e311c => _0x6e311c[_0xd8769a(0x17a)]())['then'](_0xc78d42 => { const _0x19a04e = _0xd8769a; _0xc78d42[_0x19a04e(0x16d)][_0x19a04e(0x172)](_0x5de33d => { const _0x471515 = _0x19a04e; if (_0x5de33d['id'] == _0x5cc652) { if ('bizweb' == _0x5de33d[_0x471515(0x16b)] && 'deny' == _0x5de33d[_0x471515(0x17d)]) { let _0x24387e = parseInt(_0x5de33d['inventory_quantity']); _0x13a530 >= _0x24387e && _0x1d1fad(_0x24387e), _0x1d1fad(_0x13a530); } _0x1d1fad(_0x13a530); } }); }); } else _0x3d56c9[_0xd8769a(0x16a)][_0xd8769a(0x172)](_0x18b1c5 => { const _0x1bccf3 = _0xd8769a; _0x18b1c5['variant_id'] == _0x5cc652 && fetch(_0x18b1c5[_0x1bccf3(0x178)] + _0x1bccf3(0x170), { 'cache': 'no-store' })[_0x1bccf3(0x175)](_0x10434c => _0x10434c['json']())['then'](_0x341e79 => { const _0x4c1a00 = _0x1bccf3; _0x341e79['variants'][_0x4c1a00(0x172)](_0x5e23b1 => { const _0x3fa8ab = _0x4c1a00; if (_0x5e23b1['id'] == _0x5cc652) { if ('bizweb' == _0x5e23b1[_0x3fa8ab(0x16b)] && _0x3fa8ab(0x176) == _0x5e23b1['inventory_policy']) { let _0x344f32 = parseInt(_0x5e23b1[_0x3fa8ab(0x17f)]); _0x13a530 >= _0x344f32 && (checkMaxQuantityError(_0x344f32), _0x1d1fad(_0x344f32)), _0x1d1fad(_0x13a530); } _0x1d1fad(_0x13a530); } }); }); }); } }); }); }
+            function checkMaxQuantityError(qty) {
+                toastr['error'](`Quý khách chỉ có thể mua tối đa ${qty} sản phẩm`, 'Không thể mua thêm');
+            }
+
+            async function updateQuantity(qty, variantId) {
+                var variantIdUpdate = variantId;
+                var tempQuantity = await checkMaxQuantityAvaiable(qty, variantId) || qty;
+                $.ajax({
+                    type: 'POST',
+                    url: '/cart/change.js',
+                    data: { 'quantity': tempQuantity, 'variantId': variantId },
+                    dataType: "json",
+                    success: function (cart, variantId) {
+                        Bizweb.onCartUpdateClick(cart, variantIdUpdate);
+                        cartStatus();
+                    },
+                    error: function (qty, variantId) {
+                        Bizweb.onError(qty, variantId)
+                    }
+                })
+            }
+
+            const cartWarp = $('.js-cart');
+            const cartEmty = $('.cart__empty');
+
+            function removeItemCart(variantId) {
+                let variantIdRemove = variantId;
+                $.ajax({
+                    type: 'POST',
+                    url: '/cart/change.js',
+                    data: { 'quantity': 0, 'variantId': variantId },
+                    dataType: 'json',
+                    success: function (cart, variantId) {
+                        Bizweb.onCartRemoveClick(cart, variantId);
+                        let variantItem = $(`.variantId-${variantIdRemove}`);
+                        variantItem.remove();
+                        variantItem.addClass('deleted');
+                        setTimeout(function () {
+                            variantItem.remove();
+                        }, 200);
+
+                        if ($(".cart__basket").children().length == 0) {
+                            cartWarp.addClass('d-none');
+                            cartEmty.removeClass('d-none');
+                        }
+
+                        cartStatus();
+                    },
+                    error: function (variantId, r) {
+                        Bizweb.onError(variantId, r)
+                    }
+                })
+            }
+
+            Bizweb.updateCartPageForm = function (cart, cart_summary_id, cart_count_id) {
+                if ((typeof cart_summary_id) === 'string') {
+                    var cart_summary = $(cart_summary_id);
+                    if (cart_summary.length) {
+                        cart_summary.empty();
+                        let pageCartItemArr = [];
+                        $.each(cart, function (key, value) {
+                            if (key === 'items') {
+                                var table = jQuery(cart_summary_id);
+                                if (value.length) {
+
+                                    cartWarp.removeClass('d-none');
+                                    cartEmty.addClass('d-none');
+
+                                    $.each(value, function (i, item) {
+                                        let isDisabled = (item.quantity == '1') ? 'disabled' : '',
+                                            variantTitle = (item.variant_title == 'Default Title') ? '' : item.variant_title,
+                                            link_img = item.image || '//bizweb.dktcdn.net/100/384/579/themes/839203/assets/no_image.jpg?1662712787274';
+                                        link_img = Bizweb.resizeImage(link_img, "small");
+
+                                        var pageCartItemTemplate = `<div class="d-flex cart__basket__item product mb-4 rounded ux-card position-relative clearfix variantId-${item.variant_id}">
+            <img src="${link_img}" class="position-absolute" />
+            <div class="col-12 d-flex p-0">
+                <p class="item-title clearfix">
+                    <a href="${item.url}" title="${item.title}" class="font-weight-bold">${item.title}</a>
+                    <span class="d-block">${variantTitle}</span>
+                </p>
+                <span class="variantTotalPrice price font-weight-bold ml-auto text-right clearfix">${Bizweb.formatMoney(item.price * item.quantity, moneyFormat)}</span>
+            </div>
+            <div class="number-input d-inline-flex rounded">
+                <button class="position-relative m-0 border-0 step-down-qty js-step-qty" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                <input class="quantity text-center" readonly="" min="1" name="Lines" value="${item.quantity}" size="2" type="number" data-variantid="${item.variant_id}">
+                <button class="position-relative m-0 border-0 step-up-qty js-step-qty plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"></button>
+            </div>
+            <button class="btn btn-outline-danger remove ml-auto remove-item-cart" title="Xóa sản phẩm" data-id="${item.variant_id}">Xoá</button>
+</div>`
+                                        pageCartItemArr.push(pageCartItemTemplate);
+                                    });
+                                    table.append(pageCartItemArr.join(''));
+
+                                } else {
+                                    cartWarp.addClass('d-none');
+                                    cartEmty.removeClass('d-none');
+                                }
+                            }
+                        });
+                    }
+                }
+                updateCartDesc(cart);
+            }
+
+            function updateCartDesc(data) {
+                var $cartPrice = Bizweb.formatMoney(data.total_price, moneyFormat);
+                if (data.item_count > 0) {
+                    $('.btn-cart-indicator').removeClass('d-none');
+                } else {
+                    $('.btn-cart-indicator').addClass('d-none');
+                }
+                $('.cart__summary_total').html($cartPrice);
+            }
+
+            Bizweb.onCartUpdate = function (cart) {
+            };
+            Bizweb.onCartUpdateClick = function (cart, variantId) {
+                jQuery.each(cart, function (key, value) {
+                    if (key === 'items') {
+                        jQuery.each(value, function (i, item) {
+                            if (item.variant_id == variantId) {
+                                let variantItem = $(`.variantId-${item.variant_id}`);
+                                variantItem.find('.quantity').val(item.quantity);
+                                variantItem.find('.variantTotalPrice').html(Bizweb.formatMoney(item.price * item.quantity, moneyFormat));
+                            }
+                        });
+                    }
+                });
+                updateCartDesc(cart);
+            }
+            Bizweb.onCartRemoveClick = function (cart, variantId) {
+                jQuery.each(cart, function (key, value) {
+                    if (key === 'items') {
+                        jQuery.each(value, function (i, item) {
+                            if (item.variant_id == variantId) {
+                                let variantItem = $(`.variantId-${item.variant_id}`);
+                                variantItem.remove();
+                                variantItem.addClass('deleted');
+                                setTimeOut(function () {
+                                    variantItem.remove();
+                                }, 200)
+                            }
+                        });
+                    }
+                });
+                updateCartDesc(cart);
+            }
+            $(window).ready(function () {
+                cartStatus();
+                $.ajax({
+                    type: "GET",
+                    url: "/cart.js",
+                    async: false,
+                    cache: false,
+                    dataType: "json",
+                    success: function (cart) {
+                        updateCartDesc(cart)
+                    }
+                });
+            });
+        </script>
+    </div>
+    <script src="//bizweb.dktcdn.net/100/384/579/themes/839203/assets/appbulk-product-statistics.js?1662712787274" type="text/javascript"></script>
+
+</body>
+</html>
+

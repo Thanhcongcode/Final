@@ -1,0 +1,13 @@
+﻿@using do_an_cuoi_ky.Models
+@model IEnumerable<CHUDE>
+
+<div >
+    <div class="col-lg-12 text-center">
+        @foreach (var chude in Model)
+        {
+            <a href="@Url.Action("SPTheoChuDe", "BookStore", new { id=chude.MaCD })" style="margin: 0 30px 0 0;" >
+                @chude.TenChuDe
+            </a>
+        }
+    </div>
+</div>
